@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Countdowner</title>
-    <meta name="description" content="A countdown app" />
-    <meta name="author" content="Germaine P." />
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
+<meta charset="utf-8" />
+<title>CountDowner</title>
+<meta name="description" content="A countdown app" />
+<meta name="author" content="Germaine P." />
+<link rel="stylesheet" href="styles/main.css" />
 
-  <body>
-    <h1>Countdowner</h1>
-    <div class="container">
-      <form>
-        <label for="event-name"> Event Name</label>
-        <input type="text" id="event-name" />
-        <label for="date">When ?</label>
-        <input type="date" id="date" />
-        <button>Create</button>
-      </form>
-    </div>
+<body>
+  <h1>CountDowner</h1>
+  <div class="container">
+    <form>
+      <fieldset>
+        <label for="event-name">Event Name</label>
+        <input type="text" id="event-name" name="event-name" required/>
+        <label for="date">Event Date</label>
+        <input type="datetime-local" id="date" name="date" required />
+      </fieldset>
+      <input type="submit" value="Create Event" id="add"/>
+    </form>
+  </div>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script type="module" src="js/main.js"></script>
+</body>
 </html>
