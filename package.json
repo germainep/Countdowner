@@ -13,12 +13,6 @@
   "dependencies": {
     "jest": "^24.8.0"
   },
-  "jest": {
-    "verbose": true,
-    "transform": {
-      "^.+\\.js?$": "babel-jest"
-    }
-  },
   "devDependencies": {
     "@babel/preset-env": "^7.5.0",
     "babel": "^6.23.0",
