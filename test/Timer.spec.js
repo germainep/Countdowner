@@ -1,12 +1,16 @@
-import Timer from '../js/main';
+import Timer from '../js/Timer';
 
-jest.mock('../js/main');
+let timer;
+beforeEach(() =>{
+  timer = new Timer('12/28/2019', 'birthday');
+})
 
-beforeEach(() => {
-  Timer.mockClear();
+it('should have a name prop', function() {
+  expect(timer.eventName).toBe('birthday');
 });
 
-test('should call the Timer class', function () {
-  const timer = new Timer('12/28/2019', 'birthday');
-  expect(Timer).toHaveBeenCalledTimes(1);
+it('should have a date prop', function() {
+  expect(timer.targetDate).toBe(Date.parse('12/28/2019'));
+
+
 });
